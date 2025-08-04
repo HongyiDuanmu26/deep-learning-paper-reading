@@ -5,6 +5,6 @@ This repository contains my paper reading notes on deep learning and machine lea
 # Paper reading list
 
 ## 2025-08
-1. [RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/abs/2104.09864)
+1. [RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/abs/2104.09864)[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/RoPE.md)
 2. [MultiPath: Multiple Probabilistic Anchor Trajectory Hypotheses for Behavior Prediction](https://arxiv.org/pdf/1910.05449v1)
 
