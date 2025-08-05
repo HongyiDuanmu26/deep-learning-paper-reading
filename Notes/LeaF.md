@@ -1,4 +1,4 @@
-# Learning to Focus: Causal Attention Distillation via Gradient-Guided Token Pruning
+# [Learning to Focus: Causal Attention Distillation via Gradient-Guided Token Pruning](https://www.arxiv.org/pdf/2506.07851)
 The authors argue that in complex NLP tasks (such as math or coding), it is crucial to identify less important/misleading tokens. The performance will be boosted if input
 tokens are well trimmed.
 
