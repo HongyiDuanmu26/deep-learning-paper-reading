@@ -11,4 +11,5 @@ This repository contains my paper reading notes on deep learning and machine lea
 4. [Learning to Focus: Causal Attention Distillation via Gradient-Guided Token Pruning](https://www.arxiv.org/pdf/2506.07851) [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/LeaF.md)] [Token Pruning]
 5. [FastDriveVLA: Efficient End-to-End Driving via Plug-and-Play Reconstruction-based Token Pruning](https://arxiv.org/pdf/2507.23318) [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/LeaF.md)] [Token Pruning]
 6. [Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation](https://arxiv.org/pdf/2108.12409) [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/ALiBi.md)] [Positional Embedding]
+7. [SparseDrive: End-to-End Autonomous Driving via Sparse Scene Representation](https://arxiv.org/pdf/2405.19620) [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/SparseDrive.md)] [End-to-end Motion Planning]
 
