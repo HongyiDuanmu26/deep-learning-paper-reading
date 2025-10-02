@@ -4,6 +4,9 @@ This repository contains my paper reading notes on deep learning and machine lea
 
 # Paper reading list
 
+## 2025-10
+11\. [DN-DETR: Accelerate DETR Training by Introducing Query DeNoising](https://arxiv.org/abs/2203.01305) [2022.03] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/DN.md)] [DETR]  
+
 ## 2025-08
 10\. [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](https://arxiv.org/pdf/2409.12191) [2024.09] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/Qwen2-VL.md)] [VLM]  
 9\. [Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond](https://arxiv.org/pdf/2308.12966) [2023.08] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/Qwen-VL.md)] [VLM]  
