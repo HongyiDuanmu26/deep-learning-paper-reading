@@ -5,6 +5,7 @@ This repository contains my paper reading notes on deep learning and machine lea
 # Paper reading list
 
 ## 2025-10
+12\. [MapTRv2: An End-to-End Framework for Online Vectorized HD Map Construction](https://arxiv.org/abs/2308.05736) [2023.08] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/MapTRv2.md)] [Static Detection]  
 11\. [DN-DETR: Accelerate DETR Training by Introducing Query DeNoising](https://arxiv.org/abs/2203.01305) [2022.03] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/DN.md)] [DETR]  
 
 ## 2025-08
