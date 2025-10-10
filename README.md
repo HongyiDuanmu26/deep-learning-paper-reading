@@ -5,7 +5,7 @@ This repository contains my paper reading notes on deep learning and machine lea
 # Paper reading list
 
 ## 2025-10
-15\. [Lane Graph as Path: Continuity-preserving Path-wise Modeling for Online Lane Graph Construction](https://arxiv.org/abs/2303.08815) [2023.03] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/LaneGAP.md)] [Center Line] 
+15\. [Lane Graph as Path: Continuity-preserving Path-wise Modeling for Online Lane Graph Construction](https://arxiv.org/abs/2303.08815) [2023.03] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/LaneGAP.md)] [Center Line]  
 14\. [TopoMLP: A Simple yet Strong Pipeline for Driving Topology Reasoning](https://arxiv.org/abs/2310.06753) [2023.10] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/TopoMLP.md)] [Center Line Topology]  
 13\. [Continuity Preserving Online CenterLine Graph Learning](https://arxiv.org/abs/2407.11337) [2024.07] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/CGNet.md)] [Static Detection, Center Line]  
 12\. [MapTRv2: An End-to-End Framework for Online Vectorized HD Map Construction](https://arxiv.org/abs/2308.05736) [2023.08] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/MapTRv2.md)] [Static Detection]  
