@@ -6,8 +6,8 @@ The following work is based on Qwen-VL. Compared to version 1, version 2 has som
 Technically, there are several main differences compared to version 1:
 1. The ViT encoder is much smaller, 675M, from DFN, while in version 1, it is 1.9B. Not sure why they used a smaller vision encoder. Version 1's LLM is Qwen-7B model and in version 2, they provide three options
 Qwen-2B, Qwen-7B, Qwen-72B.
-2. The adapter used in version 1 is removed in version 2. The absolute positional embedding is replaced with 2D-RoPE. After ViT, there is one layer MLP to reduce adjacent 2*2 tokens into one.
-and ViT patch size is 14. So a 224*224 will be compressed to 66 tokens after vision encoder.
+2. The adapter used in version 1 is removed in version 2. The absolute positional embedding is replaced with 2D-RoPE. After ViT, there is one layer MLP to reduce adjacent 2x2 tokens into one.
+and ViT patch size is 14. So a 224x224 will be compressed to 66 tokens after vision encoder (64 tokens plus [video start] and [video end]).
 3. Multimodal-RoPE. The original 1D-RoPE was extended to 3D (temporal, height, width) to make it suitable for videos. Please see the number assignment rule in the image below. 
    <img width="2310" height="668" alt="image" src="https://github.com/user-attachments/assets/bb905135-091f-430c-ba22-3a4a74da1594" />
 4. Video inputs are sampled two frames per second. To make video processing and image processing unified, the image inputs will be treated as two identical frames. One 3D conv with depth of two is used for vision inputs.
