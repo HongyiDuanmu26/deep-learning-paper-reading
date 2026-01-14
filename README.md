@@ -4,6 +4,9 @@ This repository contains my paper reading notes on deep learning and machine lea
 
 # Paper reading list
 
+## 2026-01
+17\. [mHC: Manifold-Constrained Hyper-Connections](https://arxiv.org/pdf/2512.24880) [2025.12] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/mHC.md)] [Model Architecture]  
+
 ## 2025-10
 16\. [Group DETR: Fast DETR Training with Group-Wise One-to-Many Assignment](https://arxiv.org/pdf/2207.13085) [2022.07] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/GroupDETR.md)] [DETR]  
 15\. [Lane Graph as Path: Continuity-preserving Path-wise Modeling for Online Lane Graph Construction](https://arxiv.org/abs/2303.08815) [2023.03] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/LaneGAP.md)] [Center Line]  
