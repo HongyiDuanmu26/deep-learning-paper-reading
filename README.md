@@ -5,6 +5,7 @@ This repository contains my paper reading notes on deep learning and machine lea
 # Paper reading list
 
 ## 2026-01
+20\. [DeepSpeed-MoE: Advancing Mixture-of-Experts Inference and Training to Power Next-Generation AI Scale](https://arxiv.org/pdf/2201.05596) [2022.01] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/deepspeedMoE.md)] [Mixture-of-Experts]  
 19\. [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/abs/2101.03961) [2021.01] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/Switch_Trans.md)] [Mixture-of-Experts]  
 18\. [Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://arxiv.org/abs/1701.06538) [2017.01] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/SP_MoE.md)] [Mixture-of-Experts]  
 17\. [mHC: Manifold-Constrained Hyper-Connections](https://arxiv.org/pdf/2512.24880) [2025.12] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/mHC.md)] [Model Architecture]  
