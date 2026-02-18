@@ -6,9 +6,9 @@ vague description of data preparation:
   and LSH algorithms.
 * To filter out low-quality data, we employ a combination of rule-based and machine-learning-based methods. Specifically, we use multiple models to score the content, including
   language models, text-quality scoring models, and models for identifying potentially offensive or inappropriate content.
-* To further enhance the quality of our data, we selectively up-sample data from certain sources, to ensure that our models are trained on a diverse range of high-quality content. I
+* To further enhance the quality of our data, we selectively up-sample data from certain sources, to ensure that our models are trained on a diverse range of high-quality content.
 * byte pair encoding (BPE) as our tokenization method. To enhance the performance of our model on multilingual downstream tasks, particularly in Chinese,
-  we augment the vocabulary with commonly used Chinese characters and words, as well as those in other languages. 
+  we augment the vocabulary with commonly used Chinese characters and words, as well as those in other languages. We have split numbers into single digits.
 * Finally, we have built a dataset of up to 3 trillion tokens. The final vocabulary size is approximately 152K.
 
 Architecture:
