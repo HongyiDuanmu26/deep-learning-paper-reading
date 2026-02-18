@@ -3,6 +3,8 @@
 This repository contains my paper reading notes on deep learning and machine learning. It is inspired by [Patrick Liu](https://github.com/patrick-llgc/Learning-Deep-Learning).
 
 # Paper reading list
+## 2026-02
+22\. [Efficiently Modeling Long Sequences with Structured State Spaces](https://arxiv.org/abs/2111.00396) [2021.11] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/S4.md)] [Model Architecture]  
 
 ## 2026-01
 21\. [Qwen Technical Report](https://arxiv.org/abs/2309.16609) [2023.09] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/QWen.md)] [LLM]  
