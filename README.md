@@ -4,6 +4,7 @@ This repository contains my paper reading notes on deep learning and machine lea
 
 # Paper reading list
 ## 2026-02
+23\. [EMMA: End-to-End Multimodal Model for Autonomous Driving](https://arxiv.org/abs/2410.23262) [2024.10] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/emma.md)] [VLA]  
 22\. [Efficiently Modeling Long Sequences with Structured State Spaces](https://arxiv.org/abs/2111.00396) [2021.11] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/S4.md)] [Model Architecture]  
 
 ## 2026-01
