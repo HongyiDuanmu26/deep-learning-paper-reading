@@ -12,3 +12,6 @@ expert-level balance factor to mitigate the risk of routing collapse, and meanwh
 
 <img width="1966" height="1168" alt="image" src="https://github.com/user-attachments/assets/b1818e4e-126e-43e6-b17a-be55f2848bee" />
 
+## Notes
+A really good explaination of this paper by Jianlin Su [https://kexue.fm/archives/10945](https://kexue.fm/archives/10945)
+
