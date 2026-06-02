@@ -3,6 +3,9 @@
 This repository contains my paper reading notes on deep learning and machine learning. It is inspired by [Patrick Liu](https://github.com/patrick-llgc/Learning-Deep-Learning).
 
 # Paper reading list
+## 2026-06
+28\. [DriveVLA-W0: World Models Amplify Data Scaling Law in Autonomous Driving](https://arxiv.org/abs/2510.12796) [2025.10] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/DriveVLAW0.md)] [VLA]  
+
 ## 2026-03
 27\. [DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](https://arxiv.org/abs/2401.06066) [2024.01] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/DeepSeekMoE.md)] [Mixture-of-Experts]  
 26\. [Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](https://arxiv.org/abs/2408.15664) [2024.08] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/MoEBalancing.md)] [Mixture-of-Experts]  
