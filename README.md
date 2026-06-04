@@ -4,6 +4,7 @@ This repository contains my paper reading notes on deep learning and machine lea
 
 # Paper reading list
 ## 2026-06
+31\. [Revisiting Feature Prediction for Learning Visual Representations from Video](https://arxiv.org/abs/2404.08471) [2024.04] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/V-JEPA.md)] [Self Supervision, Large Vision Encoder]  
 30\. [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](https://arxiv.org/abs/2506.09985) [2025.06] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/V-JEPA2.md)] [World Model]  
 29\. [FAST: Efficient Action Tokenization for Vision-Language-Action Models](https://arxiv.org/abs/2501.09747) [2025.01] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/FAST.md)] [VLA]  
 28\. [DriveVLA-W0: World Models Amplify Data Scaling Law in Autonomous Driving](https://arxiv.org/abs/2510.12796) [2025.10] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/DriveVLAW0.md)] [VLA]  
