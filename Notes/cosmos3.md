@@ -1,0 +1,34 @@
+# [Cosmos 3: Omnimodal World Models for Physical AI](https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf)
+
+Cosmos3 is designed to have the ability to process multiple sources of input, including text, image/video, and actions, and outputs text, image/video, actions, and audio. 
+
+<img width="1909" height="945" alt="image" src="https://github.com/user-attachments/assets/ea033a93-21e9-427d-894a-24a77ebe74ae" />
+
+Different modalities of inputs need different encoders. Image/Video has one ViT encoder for understanding and one VAE encoder for generating. Audio has a VAE encoder as it is only appears in outputs of generative tasks. No encoder needed for texts.
+For different actions in different tasks, they have different DoF and are designed with different dimensions of vectors. All actions will be projected to the latent space with one linear layer with different parameters for different types of actions.
+
+<img width="1921" height="1285" alt="image" src="https://github.com/user-attachments/assets/36158fa8-1a6f-4414-ab4d-0206ac536c16" />
+
+The authors proposed one schema that: the input sentence consists of two parts, one is auto-regressive subsequence and a diffusion subsequence. Auto-regressive subsequence contains language tokens as well
+as video and image tokens embedded by the ViT encoder. Diffusion subsequence follows the AR subsequence and contains video and image tokens from the VAE
+encoder, as well as audio and action tokens. For any given task, we apply the same format to arrange these tokens: (1) autoregressive tokens are placed
+before diffusion tokens; (2) within the diffusion subsequence, for each modality, clean conditioning tokens are
+placed before noisy diffusion tokens; and (3) within both the conditioning and diffusion subsequence, tokens
+are ordered by vision, audio, and action modality. We denote clean vision, audio,
+and action tokens as 𝑣, 𝑠, and 𝑎, respectively, and their noisy counterparts with tildes: ˜𝑣, ˜𝑠, and ˜𝑎. 
+
+So for different tasks, input tokens are arranged like:
+1. Language. only autoregressive subsequence. Vision (optional) and text tokens are fed into the system acting like a VLM.
+2. Text-to-Image. autoregressive subsequence contains the language tokens, while the diffusion subsequence contains the noisy target image tokens embedded by the VAE encoder.
+   <img width="1950" height="61" alt="image" src="https://github.com/user-attachments/assets/30226091-07b5-47cb-9025-7121bfa49fd9" />
+3. Text-to-Video (+Audio). Similar to Text-to-Image, but the diffusion subsequence contains the noisy target video tokens instead.
+   <img width="1867" height="136" alt="image" src="https://github.com/user-attachments/assets/8ddfc584-bf0e-4519-819b-118a84d8e759" />
+4. Image-to-Video/Video-to-Video (+Audio). In the diffusion subsequence, the clean conditioning image or video tokens are followed by the noisy target video tokens.
+   <img width="1807" height="76" alt="image" src="https://github.com/user-attachments/assets/e43f73b9-042f-4482-b847-664590a96598" />
+5. Video transfer. Similar to that of Video-to-Video, with the control-video tokens used as conditioning tokens and the RGB video tokens used as noisy target tokens.
+   <img width="1846" height="91" alt="image" src="https://github.com/user-attachments/assets/ae23db09-3453-46de-89a7-90448b4ed3f9" />
+6. Action.
+   <img width="1896" height="733" alt="image" src="https://github.com/user-attachments/assets/1baa2887-b990-4ffc-ba6c-c9c271942450" />
+
+When the sequences are formed, they are fed into a MoT (Mixture-of-Transformers). 
+<img width="1951" height="1593" alt="image" src="https://github.com/user-attachments/assets/3a0f75ec-cfdd-49b3-8309-3dec7dff3d82" />
