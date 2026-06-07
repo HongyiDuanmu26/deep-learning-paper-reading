@@ -9,7 +9,7 @@ For different actions in different tasks, they have different DoF and are design
 
 <img width="1921" height="1285" alt="image" src="https://github.com/user-attachments/assets/36158fa8-1a6f-4414-ab4d-0206ac536c16" />
 
-The authors proposed one schema that: the input sentence consists of two parts, one is auto-regressive subsequence and a diffusion subsequence. Auto-regressive subsequence contains language tokens as well
+The authors proposed one schema that the input sentence consists of two parts, one is auto-regressive subsequence and a diffusion subsequence. Auto-regressive subsequence contains language tokens as well
 as video and image tokens embedded by the ViT encoder. Diffusion subsequence follows the AR subsequence and contains video and image tokens from the VAE
 encoder, as well as audio and action tokens. For any given task, we apply the same format to arrange these tokens: (1) autoregressive tokens are placed
 before diffusion tokens; (2) within the diffusion subsequence, for each modality, clean conditioning tokens are
@@ -30,5 +30,17 @@ So for different tasks, input tokens are arranged like:
 6. Action.
    <img width="1896" height="733" alt="image" src="https://github.com/user-attachments/assets/1baa2887-b990-4ffc-ba6c-c9c271942450" />
 
-When the sequences are formed, they are fed into a MoT (Mixture-of-Transformers). 
+When the sequences are formed, they are fed into a MoT (Mixture-of-Transformers). Two parallel transformer blocks have interaction in the self-attention layer.
 <img width="1951" height="1593" alt="image" src="https://github.com/user-attachments/assets/3a0f75ec-cfdd-49b3-8309-3dec7dff3d82" />
+
+The auto-regressive part is attended within itself with a causal mask, and the diffusion part can attend to all tokens.
+<img width="1726" height="97" alt="image" src="https://github.com/user-attachments/assets/7bb941bb-cf38-49a9-b766-54b8d9f298bd" />
+<img width="1690" height="115" alt="image" src="https://github.com/user-attachments/assets/05278e54-f045-4f8a-9aa0-cb6c449b001b" />
+
+One challenge for positional embedding is that video, audio, and actions could be sampled asynchronously and at different sample rates. There should be one time positional embedding based on real physical timestemp rather than simply indexing it. 
+For language tokens, 𝑡 = ℎ = 𝑤 is set to the same monotonically increasing value. For vision tokens, temporal indexing is shared within one frame. All audio tokens and action tokens only carry temporal coordinates. The spatial indices are set
+to zero (ℎ = 𝑤 = 0). All tokens in diffusion parts will share the same temporal offset, depending on how many temporal indexs used in auto-regressive parts. "In practice, we find that directly letting the diffusion tokens start
+from the temporal offset of the last autoregressive token leads to over-saturation and checkerboard artifacts in the initial video frames." To address this issue, we insert a fixed temporal gap between the autoregressive and diffusion
+subsequences, uniformly shifting the temporal indices of all the subsequent vision, audio, and action tokens, and the fixed temporal gap was set to be 15000. To deal with different sampling rate problem, the temporal positional embedding is normed by 
+how long the timeframe one token represents. For example, vision tokens from 24Hz video means 6Hz as VAE will compress video 4 times in temporal axis. Audio tokens in 48 kHz, 1920 hop size, means 25Hz. For action tokens, it is the sampling frequency of the action data.
+<img width="1704" height="732" alt="image" src="https://github.com/user-attachments/assets/1d21ee18-52d7-45c8-afa1-885567831876" />
