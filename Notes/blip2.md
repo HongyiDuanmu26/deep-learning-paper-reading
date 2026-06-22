@@ -14,4 +14,8 @@ text token can attend to all queries and its previous text tokens.
 mask was used where all queries and texts can attend to each other. The output query embeddings Z thus capture multimodal information. We feed each output query embedding into a two-class linear classifier to obtain a logit, and average the
 logits across all queries as the output matching score.
 
-When the first stage of training is done, second stage of training begins with a pre-trained frozen LLM. 
+ 
+<img width="1785" height="637" alt="image" src="https://github.com/user-attachments/assets/ce82d6d4-64cd-44d2-9c86-2b87ac41881c" />
+
+When the first stage of training is done, the second stage of training begins with a pre-trained frozen LLM. A fully-connected (FC) layer was used to linearly project the output query embeddings Z into the same dimension as the text embedding of the LLM.
+
