@@ -4,10 +4,10 @@ This repository contains my paper reading notes on deep learning and machine lea
 
 # Paper reading list
 ## 2026-07
-35\. [BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](https://arxiv.org/abs/2301.12597) [2023.01] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/blip2.md)] [VLA]  
+35\. [SpaceDrive: Infusing Spatial Awareness into VLM-based Autonomous Driving](https://arxiv.org/abs/2512.10719) [2025.12] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/SpaceDrive.md)] [VLA]  
 
 ## 2026-06
-34\. [SpaceDrive: Infusing Spatial Awareness into VLM-based Autonomous Driving](https://arxiv.org/abs/2512.10719) [2025.12] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/SpaceDrive.md)] [VLA]  
+34\. [BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](https://arxiv.org/abs/2301.12597) [2023.01] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/blip2.md)] [VLA]  
 33\. [DeepStack: Deeply Stacking Visual Tokens is Surprisingly Simple and Effective for LMMs](https://arxiv.org/abs/2406.04334) [2024.06] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/DeepStack.md)] [Vision Encoder]  
 32\. [Cosmos 3: Omnimodal World Models for Physical AI](https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf) [2026.06] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/cosmos3.md)] [Physical AI]  
 31\. [Revisiting Feature Prediction for Learning Visual Representations from Video](https://arxiv.org/abs/2404.08471) [2024.04] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/V-JEPA.md)] [Self Supervision, Large Vision Encoder]  
