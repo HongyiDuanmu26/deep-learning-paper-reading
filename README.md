@@ -4,6 +4,7 @@ This repository contains my paper reading notes on deep learning and machine lea
 
 # Paper reading list
 ## 2026-07
+36\. [Is Ego Status All You Need for Open-Loop End-to-End Autonomous Driving?](https://arxiv.org/abs/2312.03031) [2023.12] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/BEVPlanner.md)] [VLA]  
 35\. [SpaceDrive: Infusing Spatial Awareness into VLM-based Autonomous Driving](https://arxiv.org/abs/2512.10719) [2025.12] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/SpaceDrive.md)] [VLA]  
 
 ## 2026-06
