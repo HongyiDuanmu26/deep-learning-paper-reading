@@ -3,7 +3,8 @@
 This repository contains my paper reading notes on deep learning and machine learning. It is inspired by [Patrick Liu](https://github.com/patrick-llgc/Learning-Deep-Learning).
 
 # Paper reading list
-## 2026-08
+## 2026-08\
+39\. [Spiral RoPE: Rotate Your Rotary Positional Embeddings in the 2D Plane](https://arxiv.org/pdf/2602.03227) [2026.02] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/spiralRoPE.md)] [Positional Embedding]  
 38\. [Enhancing Multi-Image Understanding through Delimiter Token Scaling](https://arxiv.org/abs/2602.01984) [2026.02] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/enhancing_multi.md)] [VLM]  
 37\. [The Narrow Gate: Localized Image-Text Communication in Vision-Language Models](https://arxiv.org/abs/2412.06646v2) [2024.12] [[Note](https://github.com/HongyiDuanmu26/deep-learning-paper-reading/blob/main/Notes/Narrowgate.md)] [VLM]  
 
